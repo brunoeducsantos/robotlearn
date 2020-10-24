@@ -4,8 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+ I am Autonomous Robotics Engineer at Dynium developing mapping and perception solutions using LiDAR.
+ 
+In my spare time, I enjoy learning more about deep learning, robotics, and programming using online-learning platforms such as [Udacity](https://www.udacity.com/). Indeed, I enjoy the freedom of online learning and how it has helped me to make a transition from Physics to Robotics Engineering, by completing Sensor Fusion and Computer Vision Nanodegree.
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+In my past life, during my master thesis, I worked on cosmic rays research at [LIP](https://lip.pt/) partnering with [AMS](https://home.cern/science/experiments/ams) and [ISS](https://www.nasa.gov/mission_pages/station/main/index.html).
