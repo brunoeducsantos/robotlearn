@@ -15,3 +15,5 @@ branding:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+ uses: fastai/fastpages@v2.1.5
+ 
