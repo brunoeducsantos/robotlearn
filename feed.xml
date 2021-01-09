@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://brunoeducsantos.github.io/robotlearn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brunoeducsantos.github.io/robotlearn/" rel="alternate" type="text/html" /><updated>2021-01-09T08:48:35-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/feed.xml</id><title type="html">robotlearn</title><subtitle>A blog about robotics and online-learning</subtitle><entry><title type="html">Deep Learning applied to Follow-Me in robotics</title><link href="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html" rel="alternate" type="text/html" title="Deep Learning applied to Follow-Me in robotics" /><published>2020-01-09T00:00:00-06:00</published><updated>2020-01-09T00:00:00-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics</id><content type="html" xml:base="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html">&lt;h1 id=&quot;what-is-follow-me-in-robotics&quot;&gt;What is follow me in robotics?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://brunoeducsantos.github.io/robotlearn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brunoeducsantos.github.io/robotlearn/" rel="alternate" type="text/html" /><updated>2021-01-09T08:55:41-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/feed.xml</id><title type="html">robotlearn</title><subtitle>A blog about robotics and online-learning</subtitle><entry><title type="html">Deep Learning applied to Follow-Me in robotics</title><link href="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html" rel="alternate" type="text/html" title="Deep Learning applied to Follow-Me in robotics" /><published>2020-01-09T00:00:00-06:00</published><updated>2020-01-09T00:00:00-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics</id><content type="html" xml:base="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html">&lt;h1 id=&quot;what-is-follow-me-in-robotics&quot;&gt;What is follow me in robotics?&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Follow Me&lt;/strong&gt; is a field in robotics to identify and track a target in the simulation.&lt;/p&gt;
 
@@ -6,8 +6,9 @@
 
 &lt;p&gt;In &lt;a href=&quot;https://github.com/brunoeducsantos/Follow-Me&quot;&gt;this project&lt;/a&gt;, a deep neural network was trained to identify and track a target in simulation, i.e., a person called “hero” which will be mixed with other people. In the figure below there is a representation of the drone following the “hero”.&lt;/p&gt;
 
-&lt;h2&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/followme.png&quot; alt=&quot;&quot; /&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/followme.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
+&lt;hr /&gt;
 &lt;h2 id=&quot;have-you-heard-about-convolution-networks&quot;&gt;Have you heard about Convolution Networks?&lt;/h2&gt;
 
 &lt;p&gt;Keeping in mind the concept of neural networks, there are two main advantages of using convolution networks applied to image recognition:&lt;/p&gt;
@@ -29,7 +30,6 @@
 &lt;p&gt;Even though convolution networks are the state of the art for object classification, for object detection, an architecture adjustment must be applied to provide pixelwise network learning. This architecture is so called Fully Convolution Network.&lt;/p&gt;
 
 &lt;hr /&gt;
-
 &lt;h2 id=&quot;what-is-a-fully-convolution-network-&quot;&gt;What is a Fully Convolution Network ?&lt;/h2&gt;
 
 &lt;p&gt;A Fully Convolution Network (FCN) is a network architecture that allows preserving the spatial information throughout the network, which is very neat to object detection in an image. In addition, FCN can receive an input of any dimension.&lt;/p&gt;
@@ -84,7 +84,6 @@
 &lt;p&gt;After building and training a FCN , a question arises naturally : how do we know if our object detection model is performing well? That is when Inserction Over Union(IoU) metric comes handy. In the next section we will discuss about this concept and why is a good metric for object detection performance.&lt;/p&gt;
 
 &lt;hr /&gt;
-
 &lt;h2 id=&quot;whats-about-iou&quot;&gt;What’s about IoU?&lt;/h2&gt;
 
 &lt;p&gt;IoU measures how much the ground truth image overlaps with the segmented image resulting from our FCN model. Essentially, it measures the number of pixels inserction over pixel union from groundruth and segmented images FCN network. So, the metric mathematically formulation is :&lt;/p&gt;
@@ -94,7 +93,6 @@
 &lt;p&gt;Now you are wondering, what about your model? What were the hurdles ? Which were the end results? Let’s talk about it in the next section.&lt;/p&gt;
 
 &lt;hr /&gt;
-
 &lt;h2 id=&quot;what-about-the-great-project&quot;&gt;What about the great project?&lt;/h2&gt;
 
 &lt;p&gt;This project was divided into three main stages:&lt;/p&gt;
