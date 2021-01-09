@@ -8,15 +8,16 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Deep Learning applied to Follow-Me in robotics" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Deep Learning applied to Follow-Me in robotics." />
-<meta property="og:description" content="Deep Learning applied to Follow-Me in robotics." />
-<link rel="canonical" href="https://brunoeducsantos.github.io/robotlearn/markdown/2020/01/09/deeplearningfollowrobotics.html" />
-<meta property="og:url" content="https://brunoeducsantos.github.io/robotlearn/markdown/2020/01/09/deeplearningfollowrobotics.html" />
+<meta name="description" content="Apply fully convolution networks to image segmentation in robotics follow me." />
+<meta property="og:description" content="Apply fully convolution networks to image segmentation in robotics follow me." />
+<link rel="canonical" href="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html" />
+<meta property="og:url" content="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html" />
 <meta property="og:site_name" content="robotlearn" />
+<meta property="og:image" content="https://brunoeducsantos.github.io/robotlearn/images/followme.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-09T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://brunoeducsantos.github.io/robotlearn/markdown/2020/01/09/deeplearningfollowrobotics.html","@type":"BlogPosting","headline":"Deep Learning applied to Follow-Me in robotics","dateModified":"2020-01-09T00:00:00-06:00","datePublished":"2020-01-09T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://brunoeducsantos.github.io/robotlearn/markdown/2020/01/09/deeplearningfollowrobotics.html"},"description":"Deep Learning applied to Follow-Me in robotics.","@context":"https://schema.org"}</script>
+{"url":"https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html","@type":"BlogPosting","headline":"Deep Learning applied to Follow-Me in robotics","dateModified":"2020-01-09T00:00:00-06:00","datePublished":"2020-01-09T00:00:00-06:00","image":"https://brunoeducsantos.github.io/robotlearn/images/followme.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html"},"description":"Apply fully convolution networks to image segmentation in robotics follow me.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/robotlearn/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://brunoeducsantos.github.io/robotlearn/feed.xml" title="robotlearn" /><link rel="shortcut icon" type="image/x-icon" href="/robotlearn/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -87,7 +88,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Deep Learning applied to Follow-Me in robotics</h1><p class="page-description">Deep Learning applied to Follow-Me in robotics.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-01-09T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Deep Learning applied to Follow-Me in robotics</h1><p class="page-description">Apply fully convolution networks to image segmentation in robotics follow me.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-01-09T00:00:00-06:00" itemprop="datePublished">
         Jan 9, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -100,7 +101,16 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/robotlearn/categories/#markdown">markdown</a>
+        <a class="category-tags-link" href="/robotlearn/categories/#deep learning">deep learning</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/robotlearn/categories/#robotics">robotics</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/robotlearn/categories/#computer vision">computer vision</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/robotlearn/categories/#online-learning">online-learning</a>
         
       
       </p>
@@ -127,7 +137,7 @@ window.onload = wrap_img;
 
 <p>In <a href="https://github.com/brunoeducsantos/Follow-Me">this project</a>, a deep neural network was trained to identify and track a target in simulation, i.e., a person called “hero” which will be mixed with other people. In the figure below there is a representation of the drone following the “hero”.</p>
 
-<p><img src="../images/followme.png" alt="followme"></p>
+<p><img src="images/followme.png" alt="fcn"></p>
 
 <hr>
 
@@ -159,7 +169,7 @@ window.onload = wrap_img;
 
 <p>A Fully Convolution Network (FCN) is a network architecture that allows preserving the spatial information throughout the network, which is very neat to object detection in an image. In addition, FCN can receive an input of any dimension.</p>
 
-<p><img src="../images/fcn.png" alt="fcn"></p>
+<p><img src="images/fcn.png" alt="fcn"></p>
 
 <p>Regarding the architecture, FCN has the following architecture :</p>
 <ul>
@@ -188,13 +198,13 @@ window.onload = wrap_img;
 
 <p>Let’s consider the scenario where you have 4 known pixel values, so essentially a 2x2 grayscale image. This image is required to be upsampled to a 4x4 image. The following image gives a better idea of this process.</p>
 
-<p><img src="../images/bilinear.png" alt="bilinear"></p>
+<p><img src="images/bilinear.png" alt="bilinear"></p>
 
 <p>Let’s keep in mind though, the bilinear upsampling method does not contribute as a learnable layer like the transposed convolutions in the architecture and is prone to lose some finer details, but it helps speed up performance.</p>
 
 <p>For instance, transposed convolutions is a method that has learnable parameters instead of interpolation. A transposed convolution is somewhat similar because it produces the same spatial resolution a hypothetical deconvolutional layer would. However, the actual mathematical operation that’s being performed on the values is different. A transposed convolutional layer carries out a regular convolution but reverts its spatial transformation.</p>
 
-<p><img src="../images/upsample.png" alt="upsample"></p>
+<p><img src="images/upsample.png" alt="upsample"></p>
 
 <p>For further detail about transposed convolution math go <a href="https://arxiv.org/ftp/arxiv/papers/1609/1609.07009.pdf">here</a>.</p>
 
@@ -202,7 +212,7 @@ window.onload = wrap_img;
 
 <p>The third important concept is <a href="https://www.coursera.org/lecture/convolutional-neural-networks/resnets-HAhz9">skip-connections</a>, which basically gets higher resolution from initial layers of encoder and combines with the decoder layers to get more spatial resolution lost during convolution layers . This method is important to the decoder since the upsampling doesn’t recover all the spatial information.</p>
 
-<p><img src="../images/skipconnection.png" alt="Skip connection"></p>
+<p><img src="images/skipconnection.png" alt="Skip connection"></p>
 
 <p>Finally, <a href="https://arxiv.org/pdf/1608.04117.pdf">skip connections</a> are also useful to train increasing deeper networks such as ResNet architecture.</p>
 
@@ -215,7 +225,7 @@ window.onload = wrap_img;
 
 <p>IoU measures how much the ground truth image overlaps with the segmented image resulting from our FCN model. Essentially, it measures the number of pixels inserction over pixel union from groundruth and segmented images FCN network. So, the metric mathematically formulation is :</p>
 
-<p><img src="../images/iou.png" alt="iou"></p>
+<p><img src="images/iou.png" alt="iou"></p>
 
 <p>Now you are wondering, what about your model? What were the hurdles ? Which were the end results? Let’s talk about it in the next section.</p>
 
@@ -233,19 +243,19 @@ window.onload = wrap_img;
 
 <p>The preprocessing step transforms the depth masks from the sim, into binary masks suitable for training a neural network.</p>
 
-<p><img src="../images/segm.png" alt="segmentation"></p>
+<p><img src="images/segm.png" alt="segmentation"></p>
 
 <p>The final model architecture visualization is:</p>
 
-<p><img src="../images/model.png" alt="model"></p>
+<p><img src="images/model.png" alt="model"></p>
 
 <p>Firstly, the use of encoder and decoders to apply segmentation of objects in a image is based on pixel by pixel learning instead of image invariance filters as used in image classification where the spatial information is not so relevant. The overall strategy for deriving a model architecture began with a base on initial convolution layer of depth 32 with 3x3 filter , 1x1 convolution with depth 8 and decoder with same depth than encoder. The reason for this start was based on image input size 256X256X3. From this point, several convolution layers were added with increasing depth (based on powers of 2). This approach was based on SegNet architecture used by Stanford to segment objects in a image. It is important to mention that the 1x1 layer depth increase was correlated with data generation to reduce overfitting and model performance improvement. The data generation was important to reduce the error (cross-entropy) of training and validation datasets as well overcome the local minimum and allow the network to continue learning.</p>
 
 <p>Regarding the final score as you remember is defined by a metric called IoU, was given by 0.49. Usually, the criteria for validade a segmentation as the predicted object is &gt;0.5. Although, for this project as a Udacity project, the criteria was lowered to 0.4.</p>
 
-<p><img src="../images/segm2.png" alt="segmentation"></p>
+<p><img src="images/segm2.png" alt="segmentation"></p>
 
-  </div><a class="u-url" href="/robotlearn/markdown/2020/01/09/deeplearningfollowrobotics.html" hidden></a>
+  </div><a class="u-url" href="/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
