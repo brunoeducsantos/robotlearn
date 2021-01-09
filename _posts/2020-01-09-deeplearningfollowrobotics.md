@@ -120,4 +120,4 @@ Firstly, the use of encoder and decoders to apply segmentation of objects in a i
 
 Regarding the final score as you remember is defined by a metric called IoU, was given by 0.49. Usually, the criteria for validade a segmentation as the predicted object is >0.5. Although, for this project as a Udacity project, the criteria was lowered to 0.4.
 
-![]({{ site.url }}{{ site.baseurl }}/images/segm2.png
+![]({{ site.url }}{{ site.baseurl }}/images/segm2.png)
