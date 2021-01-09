@@ -14,7 +14,7 @@ So-called “follow me” applications like this are key to many fields of robot
 
 In [this project](https://github.com/brunoeducsantos/Follow-Me), a deep neural network was trained to identify and track a target in simulation, i.e., a person called “hero” which will be mixed with other people. In the figure below there is a representation of the drone following the “hero”.
 
- "{{ site.url }}{{ site.baseurl }}/images/followme"
+ "{{ site.url }}{{ site.baseurl }}/images/followme.png"
 ---
 
 ## Have you heard about Convolution Networks?
@@ -41,7 +41,7 @@ Even though convolution networks are the state of the art for object classificat
 
 A Fully Convolution Network (FCN) is a network architecture that allows preserving the spatial information throughout the network, which is very neat to object detection in an image. In addition, FCN can receive an input of any dimension.
 
-![fcn](/images/fcn.png)
+![](/images/fcn.png)
 
 Regarding the architecture, FCN has the following architecture :
 - Encoder (first 3 elements in the picture above)
