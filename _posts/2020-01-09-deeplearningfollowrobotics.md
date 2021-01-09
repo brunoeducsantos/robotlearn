@@ -14,8 +14,7 @@ So-called “follow me” applications like this are key to many fields of robot
 
 In [this project](https://github.com/brunoeducsantos/Follow-Me), a deep neural network was trained to identify and track a target in simulation, i.e., a person called “hero” which will be mixed with other people. In the figure below there is a representation of the drone following the “hero”.
 
-![followme](/images/followme.png)
-
+ "{{ site.url }}{{ site.baseurl }}/images/followme"
 ---
 
 ## Have you heard about Convolution Networks?
