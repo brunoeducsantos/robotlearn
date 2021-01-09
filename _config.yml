@@ -38,6 +38,7 @@ baseurl: "/robotlearn" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  skin: dark
   social_links:
     twitter: brunoeducsant
     github: brunoeducsantos
@@ -115,3 +116,7 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+header_pages:
+  - about.md
+  - portfolio.md
