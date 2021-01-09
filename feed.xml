@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://brunoeducsantos.github.io/robotlearn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brunoeducsantos.github.io/robotlearn/" rel="alternate" type="text/html" /><updated>2021-01-09T08:40:15-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/feed.xml</id><title type="html">robotlearn</title><subtitle>A blog about robotics and online-learning</subtitle><entry><title type="html">Deep Learning applied to Follow-Me in robotics</title><link href="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html" rel="alternate" type="text/html" title="Deep Learning applied to Follow-Me in robotics" /><published>2020-01-09T00:00:00-06:00</published><updated>2020-01-09T00:00:00-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics</id><content type="html" xml:base="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html">&lt;h1 id=&quot;what-is-follow-me-in-robotics&quot;&gt;What is follow me in robotics?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://brunoeducsantos.github.io/robotlearn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brunoeducsantos.github.io/robotlearn/" rel="alternate" type="text/html" /><updated>2021-01-09T08:44:37-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/feed.xml</id><title type="html">robotlearn</title><subtitle>A blog about robotics and online-learning</subtitle><entry><title type="html">Deep Learning applied to Follow-Me in robotics</title><link href="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html" rel="alternate" type="text/html" title="Deep Learning applied to Follow-Me in robotics" /><published>2020-01-09T00:00:00-06:00</published><updated>2020-01-09T00:00:00-06:00</updated><id>https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics</id><content type="html" xml:base="https://brunoeducsantos.github.io/robotlearn/deep%20learning/robotics/computer%20vision/online-learning/2020/01/09/deeplearningfollowrobotics.html">&lt;h1 id=&quot;what-is-follow-me-in-robotics&quot;&gt;What is follow me in robotics?&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Follow Me&lt;/strong&gt; is a field in robotics to identify and track a target in the simulation.&lt;/p&gt;
 
@@ -6,7 +6,7 @@
 
 &lt;p&gt;In &lt;a href=&quot;https://github.com/brunoeducsantos/Follow-Me&quot;&gt;this project&lt;/a&gt;, a deep neural network was trained to identify and track a target in simulation, i.e., a person called “hero” which will be mixed with other people. In the figure below there is a representation of the drone following the “hero”.&lt;/p&gt;
 
-&lt;h2 id=&quot;httpsbrunoeducsantosgithubiorobotlearnimagesfollowmepng&quot;&gt;“https://brunoeducsantos.github.io/robotlearn/images/followme.png”&lt;/h2&gt;
+&lt;h2&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/followme.png&quot; alt=&quot;&quot; /&gt;&lt;/h2&gt;
 
 &lt;h2 id=&quot;have-you-heard-about-convolution-networks&quot;&gt;Have you heard about Convolution Networks?&lt;/h2&gt;
 
@@ -34,7 +34,7 @@
 
 &lt;p&gt;A Fully Convolution Network (FCN) is a network architecture that allows preserving the spatial information throughout the network, which is very neat to object detection in an image. In addition, FCN can receive an input of any dimension.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/fcn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/fcn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Regarding the architecture, FCN has the following architecture :&lt;/p&gt;
 &lt;ul&gt;
@@ -48,7 +48,7 @@
 
 &lt;p&gt;A brand new concept is 1x1 convolution layer. In simple terms, it is a convolution layer that preserves spatial information . In addition 1x1 performs element wise multiplication and summation by applying a 1x1 sliding window over the input layers from the encoder. Finally,1x1 convolution reduces computational costs by reducing depth of encoder architecture. As an analogy, 1x1 convolution layer works like a Fully Connected Layer since combines linearly the depth layers and input a RELU , although reversely to Fully Connected Layers it preserves spatial information.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/decoder.png&quot; alt=&quot;decoder&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/decoder.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally, the decoder is composed by bilinear upsampling layers followed by convolution layer+ batch-normalization and skip connections with encoder layers to improve lost spatial features resolution.&lt;/p&gt;
 
@@ -63,13 +63,13 @@
 
 &lt;p&gt;Let’s consider the scenario where you have 4 known pixel values, so essentially a 2x2 grayscale image. This image is required to be upsampled to a 4x4 image. The following image gives a better idea of this process.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/bilinear.png&quot; alt=&quot;bilinear&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/bilinear.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Let’s keep in mind though, the bilinear upsampling method does not contribute as a learnable layer like the transposed convolutions in the architecture and is prone to lose some finer details, but it helps speed up performance.&lt;/p&gt;
 
 &lt;p&gt;For instance, transposed convolutions is a method that has learnable parameters instead of interpolation. A transposed convolution is somewhat similar because it produces the same spatial resolution a hypothetical deconvolutional layer would. However, the actual mathematical operation that’s being performed on the values is different. A transposed convolutional layer carries out a regular convolution but reverts its spatial transformation.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/upsample.png&quot; alt=&quot;upsample&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/upsample.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;For further detail about transposed convolution math go &lt;a href=&quot;https://arxiv.org/ftp/arxiv/papers/1609/1609.07009.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -77,7 +77,7 @@
 
 &lt;p&gt;The third important concept is &lt;a href=&quot;https://www.coursera.org/lecture/convolutional-neural-networks/resnets-HAhz9&quot;&gt;skip-connections&lt;/a&gt;, which basically gets higher resolution from initial layers of encoder and combines with the decoder layers to get more spatial resolution lost during convolution layers . This method is important to the decoder since the upsampling doesn’t recover all the spatial information.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/skipconnection.png&quot; alt=&quot;Skip connection&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/skipconnection.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally, &lt;a href=&quot;https://arxiv.org/pdf/1608.04117.pdf&quot;&gt;skip connections&lt;/a&gt; are also useful to train increasing deeper networks such as ResNet architecture.&lt;/p&gt;
 
@@ -89,7 +89,7 @@
 
 &lt;p&gt;IoU measures how much the ground truth image overlaps with the segmented image resulting from our FCN model. Essentially, it measures the number of pixels inserction over pixel union from groundruth and segmented images FCN network. So, the metric mathematically formulation is :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/iou.png&quot; alt=&quot;iou&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://brunoeducsantos.github.io/robotlearn/images/iou.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you are wondering, what about your model? What were the hurdles ? Which were the end results? Let’s talk about it in the next section.&lt;/p&gt;
 
@@ -106,14 +106,14 @@
 
 &lt;p&gt;The preprocessing step transforms the depth masks from the sim, into binary masks suitable for training a neural network.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/segm.png&quot; alt=&quot;segmentation&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![](https://brunoeducsantos.github.io/robotlearn/images/segm.png&lt;/p&gt;
 
 &lt;p&gt;The final model architecture visualization is:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/model.png&quot; alt=&quot;model&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![](https://brunoeducsantos.github.io/robotlearn/images/model.png&lt;/p&gt;
 
 &lt;p&gt;Firstly, the use of encoder and decoders to apply segmentation of objects in a image is based on pixel by pixel learning instead of image invariance filters as used in image classification where the spatial information is not so relevant. The overall strategy for deriving a model architecture began with a base on initial convolution layer of depth 32 with 3x3 filter , 1x1 convolution with depth 8 and decoder with same depth than encoder. The reason for this start was based on image input size 256X256X3. From this point, several convolution layers were added with increasing depth (based on powers of 2). This approach was based on SegNet architecture used by Stanford to segment objects in a image. It is important to mention that the 1x1 layer depth increase was correlated with data generation to reduce overfitting and model performance improvement. The data generation was important to reduce the error (cross-entropy) of training and validation datasets as well overcome the local minimum and allow the network to continue learning.&lt;/p&gt;
 
 &lt;p&gt;Regarding the final score as you remember is defined by a metric called IoU, was given by 0.49. Usually, the criteria for validade a segmentation as the predicted object is &amp;gt;0.5. Although, for this project as a Udacity project, the criteria was lowered to 0.4.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/segm2.png&quot; alt=&quot;segmentation&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="robotics" /><category term="computer vision" /><category term="online-learning" /><summary type="html">What is follow me in robotics?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://brunoeducsantos.github.io/robotlearn/images/followme.png" /><media:content medium="image" url="https://brunoeducsantos.github.io/robotlearn/images/followme.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;![](https://brunoeducsantos.github.io/robotlearn/images/segm2.png&lt;/p&gt;</content><author><name></name></author><category term="deep learning" /><category term="robotics" /><category term="computer vision" /><category term="online-learning" /><summary type="html">What is follow me in robotics?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://brunoeducsantos.github.io/robotlearn/images/followme.png" /><media:content medium="image" url="https://brunoeducsantos.github.io/robotlearn/images/followme.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
