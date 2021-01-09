@@ -110,11 +110,11 @@ This project was divided into three main stages:
 
 The preprocessing step transforms the depth masks from the sim, into binary masks suitable for training a neural network.
 
-![]({{ site.url }}{{ site.baseurl }}/images/segm.png
+![]({{ site.url }}{{ site.baseurl }}/images/segm.png)
 
 The final model architecture visualization is:
 
-![]({{ site.url }}{{ site.baseurl }}/images/model.png
+![]({{ site.url }}{{ site.baseurl }}/images/model.png)
 
 Firstly, the use of encoder and decoders to apply segmentation of objects in a image is based on pixel by pixel learning instead of image invariance filters as used in image classification where the spatial information is not so relevant. The overall strategy for deriving a model architecture began with a base on initial convolution layer of depth 32 with 3x3 filter , 1x1 convolution with depth 8 and decoder with same depth than encoder. The reason for this start was based on image input size 256X256X3. From this point, several convolution layers were added with increasing depth (based on powers of 2). This approach was based on SegNet architecture used by Stanford to segment objects in a image. It is important to mention that the 1x1 layer depth increase was correlated with data generation to reduce overfitting and model performance improvement. The data generation was important to reduce the error (cross-entropy) of training and validation datasets as well overcome the local minimum and allow the network to continue learning.
 
