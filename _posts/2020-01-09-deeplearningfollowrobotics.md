@@ -15,8 +15,8 @@ So-called “follow me” applications like this are key to many fields of robot
 In [this project](https://github.com/brunoeducsantos/Follow-Me), a deep neural network was trained to identify and track a target in simulation, i.e., a person called “hero” which will be mixed with other people. In the figure below there is a representation of the drone following the “hero”.
 
 ![]({{ site.url }}{{ site.baseurl }}/images/followme.png)
----
 
+---
 ## Have you heard about Convolution Networks?
 
 
@@ -35,8 +35,8 @@ As activation function per a layer, RELU applies elementwise non-linearity.
 Even though convolution networks are the state of the art for object classification, for object detection, an architecture adjustment must be applied to provide pixelwise network learning. This architecture is so called Fully Convolution Network.
 
 
----
 
+---
 ## What is a Fully Convolution Network ?
 
 A Fully Convolution Network (FCN) is a network architecture that allows preserving the spatial information throughout the network, which is very neat to object detection in an image. In addition, FCN can receive an input of any dimension.
@@ -88,9 +88,7 @@ Finally, [skip connections](https://arxiv.org/pdf/1608.04117.pdf) are also usefu
 
 After building and training a FCN , a question arises naturally : how do we know if our object detection model is performing well? That is when Inserction Over Union(IoU) metric comes handy. In the next section we will discuss about this concept and why is a good metric for object detection performance.
 
-
 ---
-
 ## What's about IoU?
 
 IoU measures how much the ground truth image overlaps with the segmented image resulting from our FCN model. Essentially, it measures the number of pixels inserction over pixel union from groundruth and segmented images FCN network. So, the metric mathematically formulation is :
@@ -100,7 +98,6 @@ IoU measures how much the ground truth image overlaps with the segmented image r
 Now you are wondering, what about your model? What were the hurdles ? Which were the end results? Let’s talk about it in the next section.
 
 ---
-
 ## What about the great project?
 
 This project was divided into three main stages:
