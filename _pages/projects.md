@@ -4,8 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
- ---
- # Follow-Me 
+ ## Follow-Me 
 
  In [this project](https://github.com/brunoeducsantos/Follow-Me), a deep neural network was used to identify and track a target in simulation. 
  
@@ -13,8 +12,8 @@ permalink: /projects/
 
  ![]({{ site.url }}{{ site.baseurl }}/images/followme.jpg)
 
- ---
-# 3D Vehicle Tracking
+---
+## 3D Vehicle Tracking
 In [this project](https://github.com/brunoeducsantos/3D-Vehicle-Tracking) the following keys concepts were developed:
 * Keypoint detectors and descriptors
 * Object detection using the pre-trained YOLO deep-learning framework
