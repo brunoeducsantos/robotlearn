@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Bruno Santos
+title: About Me
 permalink: /about/
 ---
+
+![]({{ site.url }}{{ site.baseurl }}/images/BrunoSantos.jpg)
 
  I am Autonomous Robotics Engineer at [Dynium](https://dynium.ai/) developing mapping and perception solutions using LiDAR.
  
