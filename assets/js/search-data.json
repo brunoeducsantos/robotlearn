@@ -18,7 +18,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": ". I am Autonomous Robotics Engineer at Dynium developing mapping and perception solutions using LiDAR. . In my spare time, I enjoy learning more about deep learning, robotics, and programming using online-learning platforms such as Udacity. Indeed, I enjoy the freedom of online learning and how it has helped me to make a transition from Physics to Robotics Engineering. By completing Sensor Fusion and Computer Vision Nanodegree, I started to climb the knowledge stair to robotics odyssey. . In my past life, during my master thesis, I worked on cosmic rays research at LIP partnering with AMS and ISS. .",
+          "content": ". My name is Bruno Santos and I am Autonomous Robotics Engineer at Dynium developing mapping, perception and localization solutions using LiDAR applied to mobile robotics in agriculture. . In my spare time, I enjoy learning more about deep learning, robotics, and programming using online-learning platforms such as Udacity. Indeed, I enjoy the freedom of online-learning and how it has been helping me to make a transition from Physics to Robotics Engineering. The completion of Sensor Fusion and Computer Vision Nanodegree helped me starting the knowledge staircase to my robotics and computer vision endeavour. . During my past life, during my master thesis, I worked on cosmic rays research at LIP partnering with AMS and ISS. .",
           "url": "https://brunoeducsantos.github.io/robotlearn/about/",
           "relUrl": "/about/",
           "date": ""
@@ -31,7 +31,7 @@
   
       ,"page3": {
           "title": "Projects",
-          "content": "WIP .",
+          "content": ". # Follow-Me . In this project, a deep neural network was used to identify and track a target in simulation. . So-called “follow me” applications like this are key to many fields of robotics and the very same techniques you apply here could be extended to scenarios like advanced cruise control in autonomous vehicles or human-robot collaboration in industry. . . . 3D Vehicle Tracking . In this project the following keys concepts were developed: . Keypoint detectors and descriptors | Object detection using the pre-trained YOLO deep-learning framework | Methods to track objects by matching keypoints and bounding boxes across successive images | Associating regions in a camera image with lidar points in 3D space | Estimate TTC (aka Time-To-Collision) using LiDAR and camera key point matching | . .",
           "url": "https://brunoeducsantos.github.io/robotlearn/projects/",
           "relUrl": "/projects/",
           "date": ""
