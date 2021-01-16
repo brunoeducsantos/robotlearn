@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 ---
- ## Follow Me 
+ # Follow Me 
 
  In [this project](https://github.com/brunoeducsantos/Follow-Me), a deep neural network was used to identify and track a target in simulation. 
  
