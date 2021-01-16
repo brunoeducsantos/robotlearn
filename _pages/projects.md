@@ -25,3 +25,14 @@ In [this project](https://github.com/brunoeducsantos/3D-Vehicle-Tracking) the fo
 
  ![]({{ site.url }}{{ site.baseurl }}/images/followme.png)
 
+---
+## LiDAR Vehicle Detection
+
+The goal of [project](https://github.com/brunoeducsantos/Lidar-Obstacle-Detection) is apply segmentation of objects around the ego motion car and as a result detect obstacles around it using LiDAR data. In this project, the following tasks were completed:
+
+* Implementation of customized [3D Ransac](https://github.com/brunoeducsantos/Lidar-Obstacle-Detection/blob/master/src/processPointClouds.cpp)
+* Implementation of [KDTree](https://github.com/brunoeducsantos/Lidar-Obstacle-Detection/blob/master/src/kdtree.h)
+* Implementation of [pre-processing cloud pipeline](https://github.com/brunoeducsantos/Lidar-Obstacle-Detection/blob/master/src/processPointClouds.cpp)
+
+
+ ![]({{ site.url }}{{ site.baseurl }}/images/lidar.gif)
