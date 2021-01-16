@@ -4,14 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
----
- # Follow Me 
-
- In [this project](https://github.com/brunoeducsantos/Follow-Me), a deep neural network was used to identify and track a target in simulation. 
- 
- So-called “follow me” applications like this are key to many fields of robotics and the very same techniques you apply here could be extended to scenarios like advanced cruise control in autonomous vehicles or human-robot collaboration in industry. 
-
- ![]({{ site.url }}{{ site.baseurl }}/images/followme.png)
 
 ---
 ## 3D Vehicle Tracking
@@ -24,4 +16,11 @@ In [this project](https://github.com/brunoeducsantos/3D-Vehicle-Tracking) the fo
 
 ![]({{ site.url }}{{ site.baseurl }}/images/ttc_estimation.png)
 
+---
+ ## Follow Me 
+ In [this project](https://github.com/brunoeducsantos/Follow-Me), a deep neural network was used to identify and track a target in simulation. 
+ 
+ So-called “follow me” applications like this are key to many fields of robotics and the very same techniques you apply here could be extended to scenarios like advanced cruise control in autonomous vehicles or human-robot collaboration in industry. 
+
+ ![]({{ site.url }}{{ site.baseurl }}/images/followme.png)
 ---
