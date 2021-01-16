@@ -11,7 +11,7 @@ permalink: /projects/
  
  So-called “follow me” applications like this are key to many fields of robotics and the very same techniques you apply here could be extended to scenarios like advanced cruise control in autonomous vehicles or human-robot collaboration in industry. 
 
- ![]({{ site.url }}{{ site.baseurl }}/images/followme.jpg)
+ ![]({{ site.url }}{{ site.baseurl }}/images/followme.png)
 
 ---
 ## 3D Vehicle Tracking
@@ -22,5 +22,6 @@ In [this project](https://github.com/brunoeducsantos/3D-Vehicle-Tracking) the fo
 * Associating regions in a camera image with lidar points in 3D space
 * Estimate TTC (aka Time-To-Collision) using LiDAR and camera key point matching
 
-![]({{ site.url }}{{ site.baseurl }}/images/ttc_estimation.jpg)
+![]({{ site.url }}{{ site.baseurl }}/images/ttc_estimation.png)
+
 ---
